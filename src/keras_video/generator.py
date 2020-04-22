@@ -50,7 +50,7 @@ class VideoFrameGenerator(Sequence):
 
     def __init__(
             self,
-            rescale=1/255.,
+            rescale=np.double(1/255.),
             nb_frames: int = 5,
             classes: list = None,
             batch_size: int = 16,
