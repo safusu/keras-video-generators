@@ -15,10 +15,9 @@ import logging
 import re
 log = logging.getLogger()
 
-from keras.utils import Sequence
-from keras.preprocessing.image import \
+from tensorflow.keras.utils import Sequence
+from tensorflow.keras.preprocessing.image import \
     ImageDataGenerator, img_to_array
-
 
 class VideoFrameGenerator(Sequence):
     """
